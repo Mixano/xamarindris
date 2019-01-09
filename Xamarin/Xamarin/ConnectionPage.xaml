@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.ConnectionPage">
+    <StackLayout VerticalOptions="Center">
+        <Label Text="Login:" 
+           HorizontalOptions="Center"/>
+        <Entry x:Name="entryLogin" TextChanged="EntryLogin_TextChanged"/>
+        <Label Text="IP:" 
+           HorizontalOptions="Center"/>
+        <Entry x:Name="entryIP" TextChanged="EntryIP_TextChanged"/>
+        <Label Text="Port:" 
+           HorizontalOptions="Center"/>
+        <Entry x:Name="entryPort" TextChanged="EntryPort_TextChanged"/>
+        <Button Text="Connect"
+                Clicked="ButtonConnect_Clicked"
+                x:Name="buttonConnect"
+                IsEnabled="False"/>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.MainPage">
+    <ContentPage.Content>
+      <StackLayout VerticalOptions="End">
+            <ScrollView>
+                <Label Text="" x:Name="labelOutput"/>
+            </ScrollView>
+            <Entry x:Name="entryInputText" TextChanged="EntryInputText_TextChanged"/>
+            <Button Text="Send" x:Name="sendButton" Clicked="SendButton_Clicked" />
+      </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
